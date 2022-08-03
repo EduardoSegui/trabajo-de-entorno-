@@ -7,6 +7,7 @@ then
         grep -oE "[a-zA-Z]{2,}" $ARCHIVO >> PALABRAS.txt
 # con grep y exprecion regular me filta palabras que tengas al menos dos caracteres, 
 #-oE (o)only agarra solamnete lo que machea, E son las expreciones regulares extendidas(es para tener mas expresiones) 
+
 ARC=$(cat PALABRAS.txt)
 
         for A in $ARC

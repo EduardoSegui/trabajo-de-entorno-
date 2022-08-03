@@ -6,7 +6,9 @@ grep -E '[A-Z].*\.+' $1 | sort -d >> ORC.txt
 grep -E '\¿.*\?+' $1 >> ORC.txt
 grep -E '\¡.*\!+' $1 >> ORC.txt
 
-for linea in "$(sed "s/\. /\n/g" ORC.txt)"
+for linea in "$(sed "s/\. /\n/g" ORC.txt)" #sed reemplaza los puntos seguidos de un espacio por un salto de linea
+
+#
 do
         echo "$linea"  >> LINEAS.txt
 done
